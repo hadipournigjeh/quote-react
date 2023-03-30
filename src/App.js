@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, {useEffect, useState}  from 'react';
 
@@ -20,8 +20,8 @@ function App() {
   return (
     <div className="App">
       <ul>
-        {data.map(element => {
-          return <li>
+        {data.map((element, index) => {
+          return <li key={index}>
                   <p>
                     {element.quote}
                   </p>
