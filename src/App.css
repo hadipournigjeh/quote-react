@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
   width: 100%;
   height: 100px;
 }
@@ -62,8 +62,9 @@
 
 .btn-all{
   background-color: rgb(255, 140, 0);
-  width: 100px;
-  height: 30px;
+  width: 125px;
+  height: 50px;
+  font-size: 1.6rem;
   cursor: pointer;
   border-radius: 10px 0px 10px 0px;
   border: none;
@@ -76,8 +77,9 @@
 
 .btn-random{
   background-color: rgb(255, 140, 0);
-  width: 100px;
-  height: 30px;
+  width: 125px;
+  height: 50px;
+  font-size: 1.6rem;
   cursor: pointer;
   border-radius: 0px 10px 0px 10px;
   border: none;
@@ -88,11 +90,39 @@
 }
 
 .bg-ul{
-  background-color: rgb(177, 177, 177);
-list-style: none;
+  background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+  list-style: none;
+  border-radius: 10px;
+  padding: 20px  30px;
+  color: white;
 }
  
 .all-quote{
   height: auto;
   width: 80%;
+}
+
+body{
+  background-color: #a22bff52;
+}
+
+@media only screen and (max-width: 390px)  {
+  .header-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-225deg, #FF3CAC -35%, #562B7C 55%);
+    width: 100%;
+    height: 200px;
+  }
+  
+  .header-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 5px;
+  }
 }

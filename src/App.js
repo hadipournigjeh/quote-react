@@ -48,6 +48,7 @@ function App() {
                     <h3>
                       {element.author}
                     </h3>
+                    <br/>
                   </li>
           })}
         </ul>
