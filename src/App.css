@@ -72,6 +72,8 @@ header {
   cursor: pointer;
   color: #562B7C;
   width: 45%;
+  border-radius: 10px;
+  padding: 8px;
 }
 .btn-all:hover{
   box-shadow: 0px 2px 5px 1px rgb(100, 100, 100);
@@ -101,6 +103,8 @@ body{
 .search-input{
   width: 100%;
   font-size: 1.3rem;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 /* -------------- media query ----------- */
