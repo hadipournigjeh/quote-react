@@ -40,8 +40,8 @@ function App() {
     // .then(res => res.json())
     // .then(data => setData(data))
     const filteredItems  = data.filter((item)=> 
-    item["quote"].includes(value) || 
-    item["author"].includes(value))
+    item["quote"].toLowerCase().includes(value.toLowerCase()) || 
+    item["author"].toLowerCase().includes(value.toLowerCase()))
     console.log(filteredItems,"Filtered  Items");
     console.log(filteredData,"FilteredDate")
 setFilteredData(filteredItems)
